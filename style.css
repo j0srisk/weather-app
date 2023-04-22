@@ -26,10 +26,27 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
+
+main {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+  font-size: 0.8em;
+  color: #888;
+}
+
 
 h1 {
   font-size: 3.2em;
@@ -92,7 +109,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #1a1a1a;
+  outline-color: #646cff;
 }
 
 .search {
@@ -101,6 +118,15 @@ input[type="text"]:focus {
   gap: .5rem;
 }
 
+.github-link {
+  display: flex;
+}
+
+.github-icon {
+  width: 1.5em;
+  height: 1.5em;
+  fill: #0671D2;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
