@@ -1,4 +1,4 @@
-const apiKey = import.meta.env.VITE_API_KEY
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY
 
 function convertData(data) {
     return {
