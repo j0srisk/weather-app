@@ -20,7 +20,7 @@ function convertData(data) {
 
 export async function getWeatherData(query) {
     try {
-        const response = await fetch('http://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + query + '&aqi=yes', {mode: 'cors'})
+        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + query + '&aqi=yes', {mode: 'cors'})
         if (!response.ok) {
             throw new Error(query + ' not found. Please try again.')
         }
